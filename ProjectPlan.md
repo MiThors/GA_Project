@@ -22,3 +22,16 @@ work and manage your available space!)
     - step 1
     - step 2
     - etc.
+- code
+    - step 1
+    - step 2
+    - etc.
+
+## Naming Conventions:
+folders: 00_name
+
+data files: 00_
+
+code: 00_
+
+output: 00_
