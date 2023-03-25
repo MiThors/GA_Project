@@ -12,4 +12,13 @@ generated (type of libraries, special adapters, potential issues, etc)
 * How much space do you need in order to
 store the data? (You might not know that in advance, but pay attention to this as you
 work and manage your available space!)
-* How will you organize your data? (see “Project Organization”)
+* How will you organize your data?
+    * Keep the metadata
+
+## Potential file structure:
+- raw data
+- metadata
+- analyses
+    - step 1
+    - step 2
+    - etc.
