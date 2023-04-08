@@ -1,1 +1,1 @@
-All files are symbolic links to the real, very large, files being stored elsewhere for everyone doing these projects to use.
+All files are symbolic links to the real, very large, files being stored elsewhere for everyone doing these projects to use. Naming conventions includes D1 or D3, which is the site the sample was taken from in the original paper and 1 and 2 are the forward and reverse strand reads.
