@@ -1,1 +1,1 @@
-All raw data files are symbolic links to the very large files being stored elsewhere for use for everyone doing these projects.
+All raw data files are symbolic links to the very large files being stored elsewhere for use for everyone doing these projects. Naming convention includes D1 or D3, which is which site the sample was taken from in the original paper and 1 and 2 for the forward and reverse strands.
