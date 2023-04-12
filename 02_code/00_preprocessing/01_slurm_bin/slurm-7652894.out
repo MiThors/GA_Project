@@ -1,0 +1,2 @@
+Skipping '/home/thors/2023_GA/GA_Project//00_data/00_raw_data/01_DNA_trimmed/DNA_D1_1*' which didn't exist, or couldn't be read
+cp: cannot stat ‘DNA*’: No such file or directory
