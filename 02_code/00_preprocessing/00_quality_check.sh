@@ -18,5 +18,5 @@ cd $SNIC_TMP
 
 fastqc -t 1 $SRCDIR/00_data/00_raw_data/01_RNA_untrimmed/RNA_D1_1*
 
-cp * $SRCDIR/01_analyses/00_preprocessing/00_quality_check/tmp/
+cp RNA* $SRCDIR/01_analyses/00_preprocessing/00_quality_check/tmp/
 

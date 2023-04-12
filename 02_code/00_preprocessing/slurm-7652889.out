@@ -1,0 +1,40 @@
+Failed to process /home/thors/2023_GA/GA_Project/00_data/00_raw_data/01_RNA_untrimmed/RNA_D1_1_fastqc.html
+uk.ac.babraham.FastQC.Sequence.SequenceFormatException: ID line didn't start with '@'
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.readNext(FastQFile.java:158)
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.<init>(FastQFile.java:89)
+	at uk.ac.babraham.FastQC.Sequence.SequenceFactory.getSequenceFile(SequenceFactory.java:106)
+	at uk.ac.babraham.FastQC.Sequence.SequenceFactory.getSequenceFile(SequenceFactory.java:62)
+	at uk.ac.babraham.FastQC.Analysis.OfflineRunner.processFile(OfflineRunner.java:159)
+	at uk.ac.babraham.FastQC.Analysis.OfflineRunner.<init>(OfflineRunner.java:121)
+	at uk.ac.babraham.FastQC.FastQCApplication.main(FastQCApplication.java:316)
+Failed to process /home/thors/2023_GA/GA_Project/00_data/00_raw_data/01_RNA_untrimmed/RNA_D1_1_fastqc.zip
+uk.ac.babraham.FastQC.Sequence.SequenceFormatException: ID line didn't start with '@'
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.readNext(FastQFile.java:158)
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.<init>(FastQFile.java:89)
+	at uk.ac.babraham.FastQC.Sequence.SequenceFactory.getSequenceFile(SequenceFactory.java:106)
+	at uk.ac.babraham.FastQC.Sequence.SequenceFactory.getSequenceFile(SequenceFactory.java:62)
+	at uk.ac.babraham.FastQC.Analysis.OfflineRunner.processFile(OfflineRunner.java:159)
+	at uk.ac.babraham.FastQC.Analysis.OfflineRunner.<init>(OfflineRunner.java:121)
+	at uk.ac.babraham.FastQC.FastQCApplication.main(FastQCApplication.java:316)
+Started analysis of RNA_D1_1.fastq.gz
+Approx 5% complete for RNA_D1_1.fastq.gz
+Approx 10% complete for RNA_D1_1.fastq.gz
+Approx 15% complete for RNA_D1_1.fastq.gz
+Approx 20% complete for RNA_D1_1.fastq.gz
+Approx 25% complete for RNA_D1_1.fastq.gz
+Approx 30% complete for RNA_D1_1.fastq.gz
+Approx 35% complete for RNA_D1_1.fastq.gz
+Approx 40% complete for RNA_D1_1.fastq.gz
+Approx 45% complete for RNA_D1_1.fastq.gz
+Approx 50% complete for RNA_D1_1.fastq.gz
+Approx 55% complete for RNA_D1_1.fastq.gz
+Approx 60% complete for RNA_D1_1.fastq.gz
+Approx 65% complete for RNA_D1_1.fastq.gz
+Approx 70% complete for RNA_D1_1.fastq.gz
+Approx 75% complete for RNA_D1_1.fastq.gz
+Approx 80% complete for RNA_D1_1.fastq.gz
+Approx 85% complete for RNA_D1_1.fastq.gz
+Approx 90% complete for RNA_D1_1.fastq.gz
+Approx 95% complete for RNA_D1_1.fastq.gz
+Analysis complete for RNA_D1_1.fastq.gz
+cp: cannot stat ‘RNA*’: No such file or directory
