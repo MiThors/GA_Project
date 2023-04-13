@@ -10,11 +10,11 @@
 #SBATCH --mail-user anth2886@student.uu.se
 
 # Load modules
-module load bioinfo-tools megahit
+module load bioinfo-tools megahit/1.2.9
 
 # Commands
 export SRCDIR=$HOME/2023_GA/GA_Project/
 
 cd $SNIC_TMP
 
-java -jar /sw/bioinfo/trimmomatic/0.39/rackham/trimmomatic PE -threads 2 -phred33 
+ 
