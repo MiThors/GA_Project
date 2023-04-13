@@ -14,7 +14,8 @@ module load bioinfo-tools megahit/1.2.9
 
 # Commands
 export SRCDIR=$HOME/2023_GA/GA_Project/
+DATA="00_data/00_raw_data/00_DNA_trimmed"
 
 cd $SNIC_TMP
 
- 
+megahit --kmin-1pass -t 2 -1 $SRCDIR/$DATA/DNA_trimmed_D1_1.fastaq.gz -2 $SRCDIR/$DATA/DNA_trimmed_D1_2.fastaq.gz -o $SRCDIR/01_analyses/01_metagenome_assembly/tmp
