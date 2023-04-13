@@ -1,1 +1,3 @@
-There needs to be a quality check before the trimming and a quality check after the trimming. There should be one script for quality checking, then one for the trimming. There is also a bin folder for failed batch attempts, for the slurm outputs. 
+One file for quality check, one file for trimming, one file for quality check after trimming.
+There is also a bin folder for failed batch attempts, for the slurm outputs. 
+The final slurm file is kept.
