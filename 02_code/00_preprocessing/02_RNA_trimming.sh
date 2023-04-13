@@ -17,4 +17,4 @@ export SRCDIR=$HOME/2023_GA/GA_Project/
 
 cd $SNIC_TMP
 
-java -jar /sw/bioinfo/trimmomatic/0.39/rackham/trimmomatic PE -threads 2 -phred33 
+java -jar /sw/bioinfo/trimmomatic/0.39/rackham/trimmomatic PE -threads 2 -phred33 -trimlog $SRCDIR/
