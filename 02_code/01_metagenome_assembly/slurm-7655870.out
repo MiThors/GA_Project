@@ -1,0 +1,38 @@
+2023-04-13 21:12:25 - MEGAHIT v1.2.9
+2023-04-13 21:12:25 - Using megahit_core with POPCNT support
+2023-04-13 21:12:25 - Convert reads to binary library
+2023-04-13 21:13:32 - INFO  sequence/io/sequence_lib.cpp  :   75 - Lib 0 (/home/thors/2023_GA/GA_Project/00_data/00_raw_data/00_DNA_trimmed/DNA_trimmed_D1_1.fastq.gz,/home/thors/2023_GA/GA_Project/00_data/00_raw_data/00_DNA_trimmed/DNA_trimmed_D1_2.fastq.gz): pe, 48110692 reads, 101 max length
+2023-04-13 21:13:37 - INFO  utils/utils.h                 :  152 - Real: 71.3899	user: 47.0957	sys: 6.7945	maxrss: 273404
+2023-04-13 21:13:37 - k-max reset to: 119 
+2023-04-13 21:13:37 - Start assembly. Number of CPU threads 2 
+2023-04-13 21:13:37 - k list: 21,29,39,59,79,99,119 
+2023-04-13 21:13:37 - Memory used: 121485448396
+2023-04-13 21:13:37 - Extracting solid (k+1)-mers and building sdbg for k = 21
+2023-04-13 22:09:08 - Assemble contigs from SdBG for k = 21
+2023-04-13 23:38:50 - Local assembly for k = 21
+2023-04-13 23:45:53 - Extract iterative edges from k = 21 to 29 
+2023-04-14 00:02:06 - Build graph for k = 29 
+2023-04-14 00:12:29 - Assemble contigs from SdBG for k = 29
+2023-04-14 01:07:02 - Local assembly for k = 29
+2023-04-14 01:19:05 - Extract iterative edges from k = 29 to 39 
+2023-04-14 01:25:11 - Build graph for k = 39 
+2023-04-14 01:33:29 - Assemble contigs from SdBG for k = 39
+2023-04-14 02:16:12 - Local assembly for k = 39
+2023-04-14 02:32:55 - Extract iterative edges from k = 39 to 59 
+2023-04-14 02:37:00 - Build graph for k = 59 
+2023-04-14 02:42:54 - Assemble contigs from SdBG for k = 59
+2023-04-14 03:12:59 - Local assembly for k = 59
+2023-04-14 03:25:24 - Extract iterative edges from k = 59 to 79 
+2023-04-14 03:28:12 - Build graph for k = 79 
+2023-04-14 03:31:55 - Assemble contigs from SdBG for k = 79
+2023-04-14 03:55:32 - Local assembly for k = 79
+2023-04-14 04:04:18 - Extract iterative edges from k = 79 to 99 
+2023-04-14 04:05:49 - Build graph for k = 99 
+2023-04-14 04:08:07 - Assemble contigs from SdBG for k = 99
+2023-04-14 04:27:17 - Local assembly for k = 99
+2023-04-14 04:34:26 - Extract iterative edges from k = 99 to 119 
+2023-04-14 04:34:30 - Build graph for k = 119 
+2023-04-14 04:36:33 - Assemble contigs from SdBG for k = 119
+2023-04-14 04:51:26 - Merging to output final contigs 
+2023-04-14 04:51:30 - 452940 contigs, total 344705346 bp, min 200 bp, max 107401 bp, avg 761 bp, N50 873 bp
+2023-04-14 04:51:31 - ALL DONE. Time elapsed: 27545.377735 seconds 
