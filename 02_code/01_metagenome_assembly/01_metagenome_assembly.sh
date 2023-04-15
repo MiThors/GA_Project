@@ -18,4 +18,4 @@ DATA="00_data/00_raw_data/00_DNA_trimmed"
 
 cd $SNIC_TMP
 
-megahit --kmin-1pass -t 2 -1 $SRCDIR/$DATA/DNA_trimmed_D1_1.fastq.gz,$SRCDIR/$DATA/DNA_trimmed_D3_1.fastq.gz -2 $SRCDIR/$DATA/DNA_trimmed_D1_2.fastq.gz,$SRCDIR/$DATA/DNA_trimmed_D3_2.fastq.gz -o $SRCDIR/01_analyses/01_metagenome_assembly/tmp_02
+megahit --kmin-1pass -t 2 -1 $SRCDIR/$DATA/DNA_trimmed_D1_1.fastq.gz,$SRCDIR/$DATA/DNA_trimmed_D3_1.fastq.gz -2 $SRCDIR/$DATA/DNA_trimmed_D1_2.fastq.gz,$SRCDIR/$DATA/DNA_trimmed_D3_2.fastq.gz -o $SRCDIR/01_analyses/01_metagenome_assembly/tmp_03
