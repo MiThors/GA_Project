@@ -14,8 +14,10 @@ module load bioinfo-tools MetaBat/2.12.1
 
 # Commands
 export SRCDIR=$HOME/2023_GA/GA_Project/
-DATA="01_analyses/01_assembly"
+DATA="00_data/03_assembled_DNA/DNA_assembled.fa.gz"
 
 cd $SNIC_TMP
 
-megahit --kmin-1pass -1 $SRCDIR/$DATA/DNA_trimmed_D1_1.fastq.gz,$SRCDIR/$DATA/DNA_trimmed_D3_1.fastq.gz -2 $SRCDIR/$DATA/DNA_trimmed_D1_2.fastq.gz,$SRCDIR/$DATA/DNA_trimmed_D3_2.fastq.gz -o $SRCDIR/01_analyses/01_metagenome_assembly/tmp_07 -t 2
+runMetaBat.sh $DATA -o $SRCDIR/01_analyses/02_binning/tmp
+
+
