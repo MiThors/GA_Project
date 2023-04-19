@@ -4,7 +4,7 @@
 #SBATCH -M snowy
 #SBATCH -p core
 #SBATCH -n 2
-#SBATCH -t 45:00
+#SBATCH -t 1:30:00
 #SBATCH -J GA_binng
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user anth2886@student.uu.se
