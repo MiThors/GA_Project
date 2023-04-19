@@ -11,13 +11,14 @@
 
 # Load modules
 module load bioinfo-tools MetaBat/2.12.1
+echo "Loaded MetaBat"
 
 # Commands
 export SRCDIR=$HOME/2023_GA/GA_Project/
 DATA="00_data/03_assembled_DNA/DNA_assembled.fa.gz"
 
-cd $SRCDIR/01_analyses/02_binning/tmp/
+cd $SNIC_TMP
 
-runMetaBat.sh $DATA
+metabat2 -i $SRCDIR/$DATA -o $SRCDIR/01_analyses/02_binning/tmp/
 
 
