@@ -1,0 +1,882 @@
+/sw/bioinfo/quast/5.0.2/rackham/bin/metaquast.py /home/thors/2023_GA/GA_Project//00_data/03_assembled_DNA/DNA_assembled.fa.gz -o /home/thors/2023_GA/GA_Project//01_analyses/03_quality_checks/00_assembly_quality/tmp/ -t 2
+
+Version: 5.0.2
+
+System information:
+  OS: Linux-3.10.0-1160.88.1.el7.x86_64-x86_64-with-centos-7.9.2009-Core (linux_64)
+  Python version: 3.7.2
+  CPUs number: 16
+
+Started: 2023-04-25 15:00:42
+
+Logging to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/metaquast.log
+
+Contigs:
+  Pre-processing...
+  /home/thors/2023_GA/GA_Project//00_data/03_assembled_DNA/DNA_assembled.fa.gz ==> DNA_assembled
+
+No references are provided, starting to search for reference genomes in SILVA 16S rRNA database and to download them from NCBI...
+
+2023-04-25 15:01:30
+Downloading blast (file: makeblastdb)...
+ 0.0% of 27429520 bytes
+ 1.0% of 27429520 bytes
+ 2.0% of 27429520 bytes
+ 3.0% of 27429520 bytes
+ 4.0% of 27429520 bytes
+ 5.0% of 27429520 bytes
+ 6.0% of 27429520 bytes
+ 7.0% of 27429520 bytes
+ 8.0% of 27429520 bytes
+ 9.0% of 27429520 bytes
+ 10.0% of 27429520 bytes
+ 11.0% of 27429520 bytes
+ 12.0% of 27429520 bytes
+ 13.0% of 27429520 bytes
+ 14.0% of 27429520 bytes
+ 15.0% of 27429520 bytes
+ 16.0% of 27429520 bytes
+ 17.0% of 27429520 bytes
+ 18.0% of 27429520 bytes
+ 19.0% of 27429520 bytes
+ 20.0% of 27429520 bytes
+ 21.0% of 27429520 bytes
+ 22.0% of 27429520 bytes
+ 23.0% of 27429520 bytes
+ 24.0% of 27429520 bytes
+ 25.0% of 27429520 bytes
+ 26.0% of 27429520 bytes
+ 27.0% of 27429520 bytes
+ 28.0% of 27429520 bytes
+ 29.0% of 27429520 bytes
+ 30.0% of 27429520 bytes
+ 31.0% of 27429520 bytes
+ 32.0% of 27429520 bytes
+ 33.0% of 27429520 bytes
+ 34.0% of 27429520 bytes
+ 35.0% of 27429520 bytes
+ 36.0% of 27429520 bytes
+ 37.0% of 27429520 bytes
+ 38.0% of 27429520 bytes
+ 39.0% of 27429520 bytes
+ 40.0% of 27429520 bytes
+ 41.0% of 27429520 bytes
+ 42.0% of 27429520 bytes
+ 43.0% of 27429520 bytes
+ 44.0% of 27429520 bytes
+ 45.0% of 27429520 bytes
+ 46.0% of 27429520 bytes
+ 47.0% of 27429520 bytes
+ 48.0% of 27429520 bytes
+ 49.0% of 27429520 bytes
+ 50.0% of 27429520 bytes
+ 51.0% of 27429520 bytes
+ 52.0% of 27429520 bytes
+ 53.0% of 27429520 bytes
+ 54.0% of 27429520 bytes
+ 55.0% of 27429520 bytes
+ 56.0% of 27429520 bytes
+ 57.0% of 27429520 bytes
+ 58.0% of 27429520 bytes
+ 59.0% of 27429520 bytes
+ 60.0% of 27429520 bytes
+ 61.0% of 27429520 bytes
+ 62.0% of 27429520 bytes
+ 63.0% of 27429520 bytes
+ 64.0% of 27429520 bytes
+ 65.0% of 27429520 bytes
+ 66.0% of 27429520 bytes
+ 67.0% of 27429520 bytes
+ 68.0% of 27429520 bytes
+ 68.0% of 27429520 bytes
+ 69.0% of 27429520 bytes
+ 70.0% of 27429520 bytes
+ 71.0% of 27429520 bytes
+ 72.0% of 27429520 bytes
+ 73.0% of 27429520 bytes
+ 74.0% of 27429520 bytes
+ 75.0% of 27429520 bytes
+ 76.0% of 27429520 bytes
+ 77.0% of 27429520 bytes
+ 78.0% of 27429520 bytes
+ 79.0% of 27429520 bytes
+ 80.0% of 27429520 bytes
+ 81.0% of 27429520 bytes
+ 82.0% of 27429520 bytes
+ 83.0% of 27429520 bytes
+ 84.0% of 27429520 bytes
+ 85.0% of 27429520 bytes
+ 86.0% of 27429520 bytes
+ 87.0% of 27429520 bytes
+ 88.0% of 27429520 bytes
+ 89.0% of 27429520 bytes
+ 90.0% of 27429520 bytes
+ 91.0% of 27429520 bytes
+ 92.0% of 27429520 bytes
+ 93.0% of 27429520 bytes
+ 94.0% of 27429520 bytes
+ 95.0% of 27429520 bytes
+ 96.0% of 27429520 bytes
+ 97.0% of 27429520 bytes
+ 98.0% of 27429520 bytes
+ 99.0% of 27429520 bytes
+blast successfully downloaded!
+Downloading blast (file: blastn)...
+ 0.0% of 39777200 bytes
+ 1.0% of 39777200 bytes
+ 2.0% of 39777200 bytes
+ 3.0% of 39777200 bytes
+ 4.0% of 39777200 bytes
+ 5.0% of 39777200 bytes
+ 6.0% of 39777200 bytes
+ 7.0% of 39777200 bytes
+ 8.0% of 39777200 bytes
+ 9.0% of 39777200 bytes
+ 10.0% of 39777200 bytes
+ 11.0% of 39777200 bytes
+ 12.0% of 39777200 bytes
+ 13.0% of 39777200 bytes
+ 14.0% of 39777200 bytes
+ 15.0% of 39777200 bytes
+ 16.0% of 39777200 bytes
+ 17.0% of 39777200 bytes
+ 18.0% of 39777200 bytes
+ 19.0% of 39777200 bytes
+ 20.0% of 39777200 bytes
+ 21.0% of 39777200 bytes
+ 22.0% of 39777200 bytes
+ 23.0% of 39777200 bytes
+ 24.0% of 39777200 bytes
+ 25.0% of 39777200 bytes
+ 26.0% of 39777200 bytes
+ 27.0% of 39777200 bytes
+ 28.0% of 39777200 bytes
+ 29.0% of 39777200 bytes
+ 30.0% of 39777200 bytes
+ 31.0% of 39777200 bytes
+ 32.0% of 39777200 bytes
+ 33.0% of 39777200 bytes
+ 34.0% of 39777200 bytes
+ 35.0% of 39777200 bytes
+ 36.0% of 39777200 bytes
+ 37.0% of 39777200 bytes
+ 38.0% of 39777200 bytes
+ 39.0% of 39777200 bytes
+ 40.0% of 39777200 bytes
+ 41.0% of 39777200 bytes
+ 42.0% of 39777200 bytes
+ 43.0% of 39777200 bytes
+ 44.0% of 39777200 bytes
+ 45.0% of 39777200 bytes
+ 46.0% of 39777200 bytes
+ 47.0% of 39777200 bytes
+ 48.0% of 39777200 bytes
+ 49.0% of 39777200 bytes
+ 50.0% of 39777200 bytes
+ 51.0% of 39777200 bytes
+ 52.0% of 39777200 bytes
+ 53.0% of 39777200 bytes
+ 54.0% of 39777200 bytes
+ 55.0% of 39777200 bytes
+ 56.0% of 39777200 bytes
+ 57.0% of 39777200 bytes
+ 58.0% of 39777200 bytes
+ 59.0% of 39777200 bytes
+ 60.0% of 39777200 bytes
+ 61.0% of 39777200 bytes
+ 62.0% of 39777200 bytes
+ 63.0% of 39777200 bytes
+ 64.0% of 39777200 bytes
+ 65.0% of 39777200 bytes
+ 66.0% of 39777200 bytes
+ 67.0% of 39777200 bytes
+ 68.0% of 39777200 bytes
+ 69.0% of 39777200 bytes
+ 70.0% of 39777200 bytes
+ 71.0% of 39777200 bytes
+ 72.0% of 39777200 bytes
+ 73.0% of 39777200 bytes
+ 74.0% of 39777200 bytes
+ 75.0% of 39777200 bytes
+ 76.0% of 39777200 bytes
+ 77.0% of 39777200 bytes
+ 78.0% of 39777200 bytes
+ 79.0% of 39777200 bytes
+ 80.0% of 39777200 bytes
+ 81.0% of 39777200 bytes
+ 82.0% of 39777200 bytes
+ 83.0% of 39777200 bytes
+ 84.0% of 39777200 bytes
+ 85.0% of 39777200 bytes
+ 86.0% of 39777200 bytes
+ 86.0% of 39777200 bytes
+ 87.0% of 39777200 bytes
+ 88.0% of 39777200 bytes
+ 89.0% of 39777200 bytes
+ 90.0% of 39777200 bytes
+ 91.0% of 39777200 bytes
+ 92.0% of 39777200 bytes
+ 93.0% of 39777200 bytes
+ 94.0% of 39777200 bytes
+ 95.0% of 39777200 bytes
+ 96.0% of 39777200 bytes
+ 97.0% of 39777200 bytes
+ 98.0% of 39777200 bytes
+ 99.0% of 39777200 bytes
+blast successfully downloaded!
+NOTICE: Permission denied accessing /sw/bioinfo/quast/5.0.2/rackham/lib/python3.7/site-packages/quast_libs/silva. Silva will be downloaded to home directory /home/thors/.quast
+
+Downloading SILVA 16S ribosomal RNA gene database...
+ 0.0% of 177015356 bytes
+ 1.0% of 177015356 bytes
+ 2.0% of 177015356 bytes
+ 3.0% of 177015356 bytes
+ 4.0% of 177015356 bytes
+ 5.0% of 177015356 bytes
+ 6.0% of 177015356 bytes
+ 7.0% of 177015356 bytes
+ 8.0% of 177015356 bytes
+ 9.0% of 177015356 bytes
+ 10.0% of 177015356 bytes
+ 11.0% of 177015356 bytes
+ 12.0% of 177015356 bytes
+ 13.0% of 177015356 bytes
+ 14.0% of 177015356 bytes
+ 15.0% of 177015356 bytes
+ 16.0% of 177015356 bytes
+ 17.0% of 177015356 bytes
+ 18.0% of 177015356 bytes
+ 19.0% of 177015356 bytes
+ 20.0% of 177015356 bytes
+ 21.0% of 177015356 bytes
+ 22.0% of 177015356 bytes
+ 23.0% of 177015356 bytes
+ 24.0% of 177015356 bytes
+ 25.0% of 177015356 bytes
+ 26.0% of 177015356 bytes
+ 27.0% of 177015356 bytes
+ 28.0% of 177015356 bytes
+ 29.0% of 177015356 bytes
+ 30.0% of 177015356 bytes
+ 31.0% of 177015356 bytes
+ 32.0% of 177015356 bytes
+ 33.0% of 177015356 bytes
+ 34.0% of 177015356 bytes
+ 35.0% of 177015356 bytes
+ 36.0% of 177015356 bytes
+ 37.0% of 177015356 bytes
+ 38.0% of 177015356 bytes
+ 39.0% of 177015356 bytes
+ 40.0% of 177015356 bytes
+ 41.0% of 177015356 bytes
+ 42.0% of 177015356 bytes
+ 43.0% of 177015356 bytes
+ 44.0% of 177015356 bytes
+ 45.0% of 177015356 bytes
+ 46.0% of 177015356 bytes
+ 47.0% of 177015356 bytes
+ 48.0% of 177015356 bytes
+ 49.0% of 177015356 bytes
+ 50.0% of 177015356 bytes
+ 51.0% of 177015356 bytes
+ 52.0% of 177015356 bytes
+ 53.0% of 177015356 bytes
+ 54.0% of 177015356 bytes
+ 55.0% of 177015356 bytes
+ 56.0% of 177015356 bytes
+ 57.0% of 177015356 bytes
+ 58.0% of 177015356 bytes
+ 59.0% of 177015356 bytes
+ 60.0% of 177015356 bytes
+ 61.0% of 177015356 bytes
+ 62.0% of 177015356 bytes
+ 63.0% of 177015356 bytes
+ 64.0% of 177015356 bytes
+ 65.0% of 177015356 bytes
+ 66.0% of 177015356 bytes
+ 67.0% of 177015356 bytes
+ 68.0% of 177015356 bytes
+ 69.0% of 177015356 bytes
+ 70.0% of 177015356 bytes
+ 71.0% of 177015356 bytes
+ 72.0% of 177015356 bytes
+ 73.0% of 177015356 bytes
+ 74.0% of 177015356 bytes
+ 75.0% of 177015356 bytes
+ 76.0% of 177015356 bytes
+ 77.0% of 177015356 bytes
+ 78.0% of 177015356 bytes
+ 79.0% of 177015356 bytes
+ 80.0% of 177015356 bytes
+ 81.0% of 177015356 bytes
+ 82.0% of 177015356 bytes
+ 83.0% of 177015356 bytes
+ 84.0% of 177015356 bytes
+ 85.0% of 177015356 bytes
+ 86.0% of 177015356 bytes
+ 87.0% of 177015356 bytes
+ 88.0% of 177015356 bytes
+ 89.0% of 177015356 bytes
+ 90.0% of 177015356 bytes
+ 91.0% of 177015356 bytes
+ 92.0% of 177015356 bytes
+ 93.0% of 177015356 bytes
+ 94.0% of 177015356 bytes
+ 95.0% of 177015356 bytes
+ 96.0% of 177015356 bytes
+ 97.0% of 177015356 bytes
+ 98.0% of 177015356 bytes
+ 99.0% of 177015356 bytes
+Processing downloaded file. Logging to /home/thors/.quast/silva/blastdb.log...
+Unpacking and replacing " " with "_"...
+Making BLAST database...
+Running BlastN..
+  processing DNA_assembled
+  unpacking DNA_assembled
+  BLAST results for DNA_assembled are saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/blast.res_DNA_assembled...
+
+
+2023-04-25 15:18:59
+Trying to download found references from NCBI. Totally 50 organisms to try.
+  unidentified_marine_bacterioplankton                     | not found in the NCBI database
+  unidentified_marine_bacterioplankton was not found in NCBI database, trying to download the next best match
+  Synechococcus_sp._WH_7805                                | successfully downloaded (total 1, 49 more to go)
+  unidentified_eubacterium_LD29                            | not found in the NCBI database
+  unidentified_eubacterium_LD29 was not found in NCBI database, trying to download the next best match
+  bacterium_enrichment_culture_clone_heteroC45_4W          | not found in the NCBI database
+  bacterium_enrichment_culture_clone_heteroC45_4W was not found in NCBI database, trying to download the next best match
+  bacterium_Ellin507                                       | not found in the NCBI database
+  bacterium_Ellin507 was not found in NCBI database, trying to download the next best match
+  Verrucomicrobia_bacterium_WY51                           | not found in the NCBI database
+  unidentified_archaeon                                    | not found in the NCBI database
+  marine_metagenome                                        | successfully downloaded (total 2, 46 more to go)
+  marine_gamma_proteobacterium_HTCC2188                    | not found in the NCBI database
+  gamma_proteobacterium_SCGC_AB-629-P17                    | successfully downloaded (total 3, 44 more to go)
+  denitrifying_bacterium_enrichment_culture_clone_NOB_2_C9 | not found in the NCBI database
+  denitrifying_bacterium_enrichment_culture_clone_NOB_2_C9 was not found in NCBI database, trying to download the next best match
+  Bacillus_sp._SCH-1                                       | not found in the NCBI database
+  Bacillus_sp._SCH-1 was not found in NCBI database, trying to download the next best match
+  Bacillus_sp._Y11(2013)                                   | not found in the NCBI database
+  Bacillus_sp._Y11(2013) was not found in NCBI database, trying to download the next best match
+  Bacillus_cereus                                          | not found in the NCBI database
+  bacterium_enrichment_culture_clone_136(2011)             | not found in the NCBI database
+  bacterium_enrichment_culture_clone_136(2011) was not found in NCBI database, trying to download the next best match
+  bacterium_Ellin507                                       | not found in the NCBI database
+  bacterium_Ellin507 was not found in NCBI database, trying to download the next best match
+  bacterium_Ellin513                                       | not found in the NCBI database
+  bacterium_WH5-6                                          | not found in the NCBI database
+  bacterium_WH5-6 was not found in NCBI database, trying to download the next best match
+  planctomycete_DDSe3017                                   | not found in the NCBI database
+  Zymomonas_mobilis                                        | successfully downloaded (total 4, 40 more to go)
+  Verrucomicrobium_spinosum_DSM_4136_=_JCM_18804           | successfully downloaded (total 5, 39 more to go)
+  Thalassobius_aestuarii                                   | successfully downloaded (total 6, 38 more to go)
+  Syntrophus_aciditrophicus                                | successfully downloaded (total 7, 37 more to go)
+  Sulfitobacter_sp._NAS-14.1                               | successfully downloaded (total 8, 36 more to go)
+  Spiribacter_sp._UAH-SP71                                 | successfully downloaded (total 9, 35 more to go)
+  Ruegeria_sp._ANG-S4                                      | successfully downloaded (total 10, 34 more to go)
+  Rubrobacter_radiotolerans                                | successfully downloaded (total 11, 33 more to go)
+  Rubritalea_sp._shu-10-MA45-1                             | not found in the NCBI database
+  Rubritalea_sp._shu-10-MA45-1 was not found in NCBI database, trying to download the next best match
+  Verrucomicrobium_sp._KLE1210                             | not found in the NCBI database
+  Verrucomicrobium_sp._KLE1210 was not found in NCBI database, trying to download the next best match
+  Roseibacillus_ponti                                      | not found in the NCBI database
+  Rubinisphaera_brasiliensis                               | successfully downloaded (total 12, 31 more to go)
+  Roseobacter_sp._SK209-2-6                                | successfully downloaded (total 13, 30 more to go)
+  Pleomorphomonas_oryzae_DSM_16300                         | successfully downloaded (total 14, 29 more to go)
+  Planctomyces_maris_DSM_8797                              | successfully downloaded (total 15, 28 more to go)
+  Nocardia_brasiliensis_ATCC_700358                        | successfully downloaded (total 16, 27 more to go)
+  Nitrospina_sp._SCGC_AAA288-L16                           | successfully downloaded (total 17, 26 more to go)
+  Nitrospina_sp._347                                       | successfully downloaded (total 18, 25 more to go)
+  Nitrospina_sp._3005                                      | not found in the NCBI database
+  Nitrospina_sp._3005 was not found in NCBI database, trying to download the next best match
+  Nitrospina_gracilis                                      | successfully downloaded (total 19, 24 more to go)
+  Nitrospina_gracilis_3                                    | not found in the NCBI database
+  Nitrospina_gracilis_3 was not found in NCBI database, trying to download the next best match
+  Nitrospina_sp._enrichment_culture_clone_Cb12             | not found in the NCBI database
+  Neptunomonas_sp._SS7.2                                   | not found in the NCBI database
+  Neptunomonas_sp._SS7.2 was not found in NCBI database, trying to download the next best match
+  Osedax_symbiont_Rs2                                      | successfully downloaded (total 20, 22 more to go)
+  Microbulbifer_agarilyticus_S89                           | successfully downloaded (total 21, 21 more to go)
+  Marinoscillum_pacificum                                  | successfully downloaded (total 22, 20 more to go)
+  Marinimicrobium_agarilyticum_DSM_16975                   | successfully downloaded (total 23, 19 more to go)
+  Litoribaculum_gwangyangense                              | not found in the NCBI database
+  Litoribaculum_gwangyangense was not found in NCBI database, trying to download the next best match
+  Formosa_agariphila_KMM_3901                              | successfully downloaded (total 24, 18 more to go)
+  Lautropia_mirabilis_ATCC_51599                           | successfully downloaded (total 25, 17 more to go)
+  Ilumatobacter_fluminis                                   | successfully downloaded (total 26, 16 more to go)
+  Ilumatobacter_coccineus_YM16-304                         | successfully downloaded (total 27, 15 more to go)
+  Hippea_maritima_DSM_10411                                | successfully downloaded (total 28, 14 more to go)
+  Flavobacterium_psychrophilum                             | successfully downloaded (total 29, 13 more to go)
+  Flammeovirgaceae_bacterium_EF2C-B566                     | not found in the NCBI database
+  Flammeovirgaceae_bacterium_EF2C-B566 was not found in NCBI database, trying to download the next best match
+  Roseivirga_sp._F8                                        | not found in the NCBI database
+  Roseivirga_sp._F8 was not found in NCBI database, trying to download the next best match
+  Marivirga_sp._SM1354                                     | successfully downloaded (total 30, 12 more to go)
+  Endozoicomonas_elysicola                                 | successfully downloaded (total 31, 11 more to go)
+  Dokdonia_donghaensis_DSW-1                               | successfully downloaded (total 32, 10 more to go)
+  Dehalococcoides_mccartyi_CG5                             | successfully downloaded (total 33, 9 more to go)
+  Dehalobacter_restrictus_DSM_9455                         | successfully downloaded (total 34, 8 more to go)
+  Dasania_marina_DSM_21967                                 | successfully downloaded (total 35, 7 more to go)
+  Cytophaga_hutchinsonii                                   | successfully downloaded (total 36, 6 more to go)
+  Cellulophaga_sp._Hel_I_12                                | successfully downloaded (total 37, 5 more to go)
+  Candidatus_Nitrosoarchaeum_limnia_SFB1                   | successfully downloaded (total 38, 4 more to go)
+  Bacteriovorax_sp._NZ7                                    | not found in the NCBI database
+  Bacteriovorax_sp._NZ7 was not found in NCBI database, trying to download the next best match
+  Bacteriovorax_sp._HAWAII1                                | not found in the NCBI database
+  Bacteriovorax_sp._HAWAII1 was not found in NCBI database, trying to download the next best match
+  Bacteriovorax_sp._SMH5                                   | not found in the NCBI database
+  Bacteriovorax_sp._SMH5 was not found in NCBI database, trying to download the next best match
+  Bacteriovorax_sp._ISRA1                                  | not found in the NCBI database
+  Bacteriovorax_sp._ETC                                    | not found in the NCBI database
+  Bacteriovorax_sp._ETC was not found in NCBI database, trying to download the next best match
+  Bacteriovorax_sp._NF3                                    | not found in the NCBI database
+  Bacteriovorax_sp._NF3 was not found in NCBI database, trying to download the next best match
+  Bacteriovorax_sp._s8-4                                   | not found in the NCBI database
+  Bacteriovorax_sp._s8-4 was not found in NCBI database, trying to download the next best match
+  Bacteriovorax_sp._IP1                                    | not found in the NCBI database
+  Armatimonas_rosea                                        | successfully downloaded (total 39, 1 more to go)
+  Aquimarina_sp._22II-S11-z7                               | successfully downloaded (total 40, 0 more to go)
+
+Downloaded reference(s):
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Aquimarina_sp._22II_S11_z7.fasta ==> Aquimarina_sp._22II_S11_z7
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Armatimonas_rosea.fasta ==> Armatimonas_rosea
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Candidatus_Nitrosoarchaeum_limnia_SFB1.fasta ==> Candidatus_Nitrosoarchaeum_limnia_SFB1
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Cellulophaga_sp._Hel_I_12.fasta ==> Cellulophaga_sp._Hel_I_12
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Cytophaga_hutchinsonii.fasta ==> Cytophaga_hutchinsonii
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Dasania_marina_DSM_21967.fasta ==> Dasania_marina_DSM_21967
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Dehalobacter_restrictus_DSM_9455.fasta ==> Dehalobacter_restrictus_DSM_9455
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Dehalococcoides_mccartyi_CG5.fasta ==> Dehalococcoides_mccartyi_CG5
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Dokdonia_donghaensis_DSW_1.fasta ==> Dokdonia_donghaensis_DSW_1
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Endozoicomonas_elysicola.fasta ==> Endozoicomonas_elysicola
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Flavobacterium_psychrophilum.fasta ==> Flavobacterium_psychrophilum
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Formosa_agariphila_KMM_3901.fasta ==> Formosa_agariphila_KMM_3901
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Hippea_maritima_DSM_10411.fasta ==> Hippea_maritima_DSM_10411
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Ilumatobacter_coccineus_YM16_304.fasta ==> Ilumatobacter_coccineus_YM16_304
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Ilumatobacter_fluminis.fasta ==> Ilumatobacter_fluminis
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Lautropia_mirabilis_ATCC_51599.fasta ==> Lautropia_mirabilis_ATCC_51599
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Marinimicrobium_agarilyticum_DSM_16975.fasta ==> Marinimicrobium_agarilyticum_DSM_16975
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Marinoscillum_pacificum.fasta ==> Marinoscillum_pacificum
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Marivirga_sp._SM1354.fasta ==> Marivirga_sp._SM1354
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Microbulbifer_agarilyticus_S89.fasta ==> Microbulbifer_agarilyticus_S89
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Nitrospina_gracilis.fasta ==> Nitrospina_gracilis
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Nitrospina_sp._347.fasta ==> Nitrospina_sp._347
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Nitrospina_sp._SCGC_AAA288_L16.fasta ==> Nitrospina_sp._SCGC_AAA288_L16
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Nocardia_brasiliensis_ATCC_700358.fasta ==> Nocardia_brasiliensis_ATCC_700358
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Osedax_symbiont_Rs2.fasta ==> Osedax_symbiont_Rs2
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Planctomyces_maris_DSM_8797.fasta ==> Planctomyces_maris_DSM_8797
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Pleomorphomonas_oryzae_DSM_16300.fasta ==> Pleomorphomonas_oryzae_DSM_16300
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Roseobacter_sp._SK209_2_6.fasta ==> Roseobacter_sp._SK209_2_6
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Rubinisphaera_brasiliensis.fasta ==> Rubinisphaera_brasiliensis
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Rubrobacter_radiotolerans.fasta ==> Rubrobacter_radiotolerans
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Ruegeria_sp._ANG_S4.fasta ==> Ruegeria_sp._ANG_S4
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Spiribacter_sp._UAH_SP71.fasta ==> Spiribacter_sp._UAH_SP71
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Sulfitobacter_sp._NAS_14.1.fasta ==> Sulfitobacter_sp._NAS_14.1
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Synechococcus_sp._WH_7805.fasta ==> Synechococcus_sp._WH_7805
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Syntrophus_aciditrophicus.fasta ==> Syntrophus_aciditrophicus
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Thalassobius_aestuarii.fasta ==> Thalassobius_aestuarii
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Verrucomicrobium_spinosum_DSM_4136___JCM_18804.fasta ==> Verrucomicrobium_spinosum_DSM_4136___JCM_18804
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Zymomonas_mobilis.fasta ==> Zymomonas_mobilis
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/gamma_proteobacterium_SCGC_AB_629_P17.fasta ==> gamma_proteobacterium_SCGC_AB_629_P17
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/marine_metagenome.fasta ==> marine_metagenome
+  All references were combined in combined_reference.fasta
+
+Starting quast.py for the combined reference...
+/sw/bioinfo/quast/5.0.2/rackham/bin/quast.py -t 2 --combined-ref --colors #E31A1C --ls solid --ambiguity-usage all /home/thors/2023_GA/GA_Project//00_data/03_assembled_DNA/DNA_assembled.fa.gz -R /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_corrected_input/combined_reference.fasta -o /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference --labels DNA_assembled
+
+Started: 2023-04-25 15:56:23
+
+Logging to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/quast.log
+
+CWD: /scratch/7731505
+Main parameters: 
+  MODE: meta, threads: 2, minimum contig length: 500, minimum alignment length: 65, ambiguity: all, \
+  threshold for extensive misassembly size: 1000
+
+Reference:
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_corrected_input/combined_reference.fasta ==> combined_reference
+
+Contigs:
+  Pre-processing...
+  /home/thors/2023_GA/GA_Project//00_data/03_assembled_DNA/DNA_assembled.fa.gz ==> DNA_assembled
+
+2023-04-25 15:57:05
+Running Basic statistics processor...
+  Reference genome:
+    combined_reference.fasta, length = 164868908, num fragments = 1155, GC % = 52.58
+WARNING:   Reference genome is fragmented. You may consider rerunning QUAST using --fragmented option. QUAST will try to detect misassemblies caused by the fragmentation and mark them fake (will be excluded from # misassemblies).
+  Contig files: 
+    DNA_assembled
+  Calculating N50 and L50...
+    DNA_assembled, N50 = 1514, L50 = 59728, Total length = 461246612, GC % = 48.64, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+/sw/bioinfo/quast/5.0.2/snowy/bin/metaquast.py:136: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/basic_stats/GC_content_plot.pdf
+  Drawing DNA_assembled GC content plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/basic_stats/DNA_assembled_GC_content_plot.pdf
+Done.
+
+2023-04-25 15:58:07
+Running Contig analyzer...
+  DNA_assembled
+  Logging to files /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/contigs_reports/contigs_report_DNA_assembled.stdout and contigs_report_DNA_assembled.stderr...
+  Aligning contigs to the reference
+  Analysis is finished.
+  Information about interspecies translocations by references for DNA_assembled is saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/contigs_reports/interspecies_translocations_by_refs_DNA_assembled.info
+  Drawing Intergenomic misassemblies (found and supposed) metaQUAST summary plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/contigs_reports/intergenomic_misassemblies.pdf
+  Creating total report...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2023-04-25 15:59:16
+Running NA-NGA calculation...
+  DNA_assembled, Largest alignment = 5336, NA50 = None, LA50 = None
+  Drawing cumulative plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/aligned_stats/NAx_plot.pdf
+Done.
+
+2023-04-25 15:59:30
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  DNA_assembled
+  Analysis is finished.
+  Skipping drawing Genome fraction, % histogram... (less than 2 columns histogram makes no sense)
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2023-04-25 16:00:32
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2023-04-25 16:00:52
+RESULTS:
+  Text versions of total report are saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/report.html
+  PDF version (tables and plots) is saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/report.pdf
+  Icarus (contig browser) is saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/icarus.html
+
+Excluding downloaded references with low genome fraction from further analysis..
+
+Filtered reference(s):
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_downloaded_references/Synechococcus_sp._WH_7805.fasta ==> Synechococcus_sp._WH_7805
+  All references were combined in combined_reference.fasta
+  Pre-processing...
+  /home/thors/2023_GA/GA_Project//00_data/03_assembled_DNA/DNA_assembled.fa.gz ==> DNA_assembled
+
+Starting quast.py for the corrected combined reference...
+/sw/bioinfo/quast/5.0.2/rackham/bin/quast.py -t 2 --combined-ref --colors #E31A1C --ls solid --ambiguity-usage all /home/thors/2023_GA/GA_Project//00_data/03_assembled_DNA/DNA_assembled.fa.gz -R /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_corrected_input/combined_reference.fasta -o /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference --labels DNA_assembled
+
+Started: 2023-04-25 16:01:46
+
+Logging to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/quast.log
+NOTICE: Output directory already exists and looks like a QUAST output dir. Existing results can be reused (e.g. previously generated alignments)!
+
+CWD: /scratch/7731505
+Main parameters: 
+  MODE: meta, threads: 2, minimum contig length: 500, minimum alignment length: 65, ambiguity: all, \
+  threshold for extensive misassembly size: 1000
+
+Reference:
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_corrected_input/combined_reference.fasta ==> combined_reference
+
+Contigs:
+  Pre-processing...
+  /home/thors/2023_GA/GA_Project//00_data/03_assembled_DNA/DNA_assembled.fa.gz ==> DNA_assembled
+
+2023-04-25 16:02:27
+Running Basic statistics processor...
+  Reference genome:
+    combined_reference.fasta, length = 2627046, num fragments = 3, GC % = 57.63
+  Contig files: 
+    DNA_assembled
+  Calculating N50 and L50...
+    DNA_assembled, N50 = 1514, L50 = 59728, Total length = 461246612, GC % = 48.64, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/basic_stats/GC_content_plot.pdf
+  Drawing DNA_assembled GC content plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/basic_stats/DNA_assembled_GC_content_plot.pdf
+Done.
+
+2023-04-25 16:03:05
+Running Contig analyzer...
+  DNA_assembled
+  Logging to files /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/contigs_reports/contigs_report_DNA_assembled.stdout and contigs_report_DNA_assembled.stderr...
+  Aligning contigs to the reference
+  Analysis is finished.
+  Information about interspecies translocations by references for DNA_assembled is saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/contigs_reports/interspecies_translocations_by_refs_DNA_assembled.info
+  Drawing Intergenomic misassemblies (found and supposed) metaQUAST summary plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/contigs_reports/intergenomic_misassemblies.pdf
+  Creating total report...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2023-04-25 16:03:37
+Running NA-NGA calculation...
+  DNA_assembled, Largest alignment = 5336, NA50 = None, LA50 = None
+  Drawing cumulative plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/aligned_stats/NAx_plot.pdf
+Done.
+
+2023-04-25 16:03:46
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  DNA_assembled
+  Analysis is finished.
+  Skipping drawing Genome fraction, % histogram... (less than 2 columns histogram makes no sense)
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2023-04-25 16:03:55
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2023-04-25 16:04:01
+RESULTS:
+  Text versions of total report are saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/report.html
+  PDF version (tables and plots) is saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/report.pdf
+  Icarus (contig browser) is saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/combined_reference/icarus.html
+
+Partitioning contigs into bins aligned to each reference..
+  processing DNA_assembled
+
+Starting quast.py for the contigs aligned to Synechococcus_sp._WH_7805... (logging to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/runs_per_reference/Synechococcus_sp._WH_7805/quast.log)
+/sw/bioinfo/quast/5.0.2/rackham/bin/quast.py -t 2 --colors #E31A1C --ls solid --no-check-meta --contig-thresholds 1000,5000,10000,25000,50000 /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_corrected_input/DNA_assembled_to_Synechococcus_sp._WH_7805.fasta -R /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_corrected_input/Synechococcus_sp._WH_7805.fasta__1 -o /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/runs_per_reference/Synechococcus_sp._WH_7805 --labels DNA_assembled
+
+Started: 2023-04-25 16:04:30
+
+Logging to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/runs_per_reference/Synechococcus_sp._WH_7805/quast.log
+
+CWD: /scratch/7731505
+Main parameters: 
+  MODE: meta, threads: 2, minimum contig length: 500, minimum alignment length: 65, ambiguity: one, \
+  threshold for extensive misassembly size: 1000
+
+Reference:
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_corrected_input/Synechococcus_sp._WH_7805.fasta__1 ==> Synechococcus_sp._WH_7805
+
+Contigs:
+  Pre-processing...
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_corrected_input/DNA_assembled_to_Synechococcus_sp._WH_7805.fasta ==> DNA_assembled
+
+2023-04-25 16:04:30
+Running Basic statistics processor...
+  Reference genome:
+    Synechococcus_sp._WH_7805.fasta__1, length = 2627046, num fragments = 3, GC % = 57.63
+  Contig files: 
+    DNA_assembled
+  Calculating N50 and L50...
+    DNA_assembled, N50 = 1924, L50 = 255, Total length = 2161311, GC % = 59.41, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/runs_per_reference/Synechococcus_sp._WH_7805/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/runs_per_reference/Synechococcus_sp._WH_7805/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/runs_per_reference/Synechococcus_sp._WH_7805/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/runs_per_reference/Synechococcus_sp._WH_7805/basic_stats/GC_content_plot.pdf
+  Drawing DNA_assembled GC content plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/runs_per_reference/Synechococcus_sp._WH_7805/basic_stats/DNA_assembled_GC_content_plot.pdf
+Done.
+
+2023-04-25 16:04:32
+Running Contig analyzer...
+  DNA_assembled
+  Logging to files /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/runs_per_reference/Synechococcus_sp._WH_7805/contigs_reports/contigs_report_DNA_assembled.stdout and contigs_report_DNA_assembled.stderr...
+  Aligning contigs to the reference
+  Analysis is finished.
+  Creating total report...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/runs_per_reference/Synechococcus_sp._WH_7805/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/runs_per_reference/Synechococcus_sp._WH_7805/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/runs_per_reference/Synechococcus_sp._WH_7805/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/runs_per_reference/Synechococcus_sp._WH_7805/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/runs_per_reference/Synechococcus_sp._WH_7805/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2023-04-25 16:04:36
+Running NA-NGA calculation...
+  DNA_assembled, Largest alignment = 5336, NA50 = 862, NGA50 = 573, LA50 = 670, LGA50 = 999
+  Drawing cumulative plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/runs_per_reference/Synechococcus_sp._WH_7805/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/runs_per_reference/Synechococcus_sp._WH_7805/aligned_stats/NAx_plot.pdf
+  Drawing NGAx plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/runs_per_reference/Synechococcus_sp._WH_7805/aligned_stats/NGAx_plot.pdf
+Done.
+
+2023-04-25 16:04:37
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  DNA_assembled
+  Analysis is finished.
+  Skipping drawing Genome fraction, % histogram... (less than 2 columns histogram makes no sense)
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2023-04-25 16:04:38
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2023-04-25 16:04:40
+RESULTS:
+  Text versions of total report are saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/runs_per_reference/Synechococcus_sp._WH_7805/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/runs_per_reference/Synechococcus_sp._WH_7805/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/runs_per_reference/Synechococcus_sp._WH_7805/report.html
+  PDF version (tables and plots) is saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/runs_per_reference/Synechococcus_sp._WH_7805/report.pdf
+  Icarus (contig browser) is saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/runs_per_reference/Synechococcus_sp._WH_7805/icarus.html
+
+Starting quast.py for the contigs not aligned anywhere... (logging to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/not_aligned/quast.log)
+/sw/bioinfo/quast/5.0.2/rackham/bin/quast.py -t 2 --colors #E31A1C --ls solid --no-check-meta --contig-thresholds 1000,5000,10000,25000,50000 -t 2 /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_corrected_input/DNA_assembled_not_aligned_anywhere.fasta -o /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/not_aligned --labels DNA_assembled
+
+Started: 2023-04-25 16:04:40
+
+Logging to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/not_aligned/quast.log
+
+CWD: /scratch/7731505
+Main parameters: 
+  MODE: meta, threads: 2, minimum contig length: 500, minimum alignment length: 65, ambiguity: one, \
+  threshold for extensive misassembly size: 1000
+
+Contigs:
+  Pre-processing...
+  /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/quast_corrected_input/DNA_assembled_not_aligned_anywhere.fasta ==> DNA_assembled
+
+2023-04-25 16:05:02
+Running Basic statistics processor...
+  Contig files: 
+    DNA_assembled
+  Calculating N50 and L50...
+    DNA_assembled, N50 = 1512, L50 = 59489, Total length = 459085301, GC % = 48.59, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/not_aligned/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/not_aligned/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/not_aligned/basic_stats/GC_content_plot.pdf
+  Drawing DNA_assembled GC content plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/not_aligned/basic_stats/DNA_assembled_GC_content_plot.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2023-04-25 16:05:39
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2023-04-25 16:05:50
+RESULTS:
+  Text versions of total report are saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/not_aligned/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/not_aligned/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/not_aligned/report.html
+  PDF version (tables and plots) is saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/not_aligned/report.pdf
+  Icarus (contig browser) is saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/not_aligned/icarus.html
+
+2023-04-25 16:05:50
+Summarizing results...
+  Drawing # contigs metaQUAST summary plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/summary/PDF/num_contigs.pdf
+  Drawing Largest contig metaQUAST summary plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/summary/PDF/Largest_contig.pdf
+  Drawing Total length metaQUAST summary plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/summary/PDF/Total_length.pdf
+  Drawing Largest alignment metaQUAST summary plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/summary/PDF/Largest_alignment.pdf
+  Drawing Total aligned length metaQUAST summary plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/summary/PDF/Total_aligned_length.pdf
+  Drawing Total length (>= 1000 bp) metaQUAST summary plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/summary/PDF/Total_length_(ge_1000_bp).pdf
+  Drawing Total length (>= 10000 bp) metaQUAST summary plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/summary/PDF/Total_length_(ge_10000_bp).pdf
+  Drawing Total length (>= 50000 bp) metaQUAST summary plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/summary/PDF/Total_length_(ge_50000_bp).pdf
+  Drawing # misassemblies metaQUAST summary plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/summary/PDF/num_misassemblies.pdf
+  Drawing metaQUAST summary misassemblies plot for DNA_assembled...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/summary/PDF/DNA_assembled_misassemblies.pdf
+  Drawing Misassembled contigs length metaQUAST summary plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/summary/PDF/Misassembled_contigs_length.pdf
+  Drawing # mismatches per 100 kbp metaQUAST summary plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/summary/PDF/num_mismatches_per_100_kbp.pdf
+  Drawing # indels per 100 kbp metaQUAST summary plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/summary/PDF/num_indels_per_100_kbp.pdf
+  Drawing # N's per 100 kbp metaQUAST summary plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/summary/PDF/num_Ns_per_100_kbp.pdf
+  Drawing Genome fraction (%) metaQUAST summary plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/summary/PDF/Genome_fraction.pdf
+  Drawing Duplication ratio metaQUAST summary plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/summary/PDF/Duplication_ratio.pdf
+  Drawing NGA50 metaQUAST summary plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/summary/PDF/NGA50.pdf
+  Drawing LGA50 metaQUAST summary plot...
+    saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/summary/PDF/LGA50.pdf
+
+  Text versions of reports and plots for each metric (for all references and assemblies) are saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/summary/
+  Icarus (contig browser) is saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/icarus.html
+  Drawing interactive Krona plots...
+  Krona chart for DNA_assembled is saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/krona_charts/DNA_assembled_taxonomy_chart.html
+  Extended version of HTML-report (for all references and assemblies) is saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/report.html
+
+MetaQUAST finished.
+  Log is saved to /home/thors/2023_GA/GA_Project/01_analyses/03_quality_checks/00_assembly_quality/tmp/metaquast.log
+
+Finished: 2023-04-25 16:05:54
+Elapsed time: 1:05:11.589516
+Total NOTICEs: 8; WARNINGs: 1; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
