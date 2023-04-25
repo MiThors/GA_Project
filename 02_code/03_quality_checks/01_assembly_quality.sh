@@ -10,6 +10,7 @@
 #SBATCH --mail-user anth2886@student.uu.se
 
 # Load modules
+cd $SNIC_TMP
 module load bioinfo-tools quast/5.0.2
 
 # Commands
@@ -19,6 +20,6 @@ QUAST_HOME=/sw/bioinfo/quast/5.0.2/snowy/bin
 
 cd $SNIC_TMP
 
-python $QUAST_HOME/metaquast.py $SRCDIR/$DATA -o $SRCDIR/01_analyses/03_quality_checks/00_assembly_quality/tmp/ -t 2
+python $QUAST_HOME/metaquast.py $SRCDIR/$DATA -o $SRCDIR/01_analyses/03_quality_checks/00_assembly_quality/tmp/ -t 2 --max-ref-number 0
 
 
