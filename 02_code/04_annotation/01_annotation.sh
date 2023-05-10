@@ -14,9 +14,19 @@ cd $SNIC_TMP
 module load bioinfo-tools prokka
 
 # Commands
-export SRCDIR=$HOME/2023_GA/GA_Project/
-DATA="00_data/"
+export SRCDIR=$HOME/2023_GA/GA_Project
+DATA="/00_data/04_binning"
 
 cd $SNIC_TMP
+cp $SRCDIR$DATA/bin* .
+gunzip bin*
 
+n=0
+for i in bin*;
+do
 
+n=$((n+1))
+prokka --outdir $SRCDIR/01_analyses/04_annotation/tmp$n --prefix bin$n --force $i
+rm $i
+
+done
