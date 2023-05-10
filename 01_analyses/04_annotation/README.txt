@@ -1,1 +1,1 @@
-tmp file for temporary outputs while doing the analysis, anything that is important output is brought into this folder.
+A basic tmp file for anything additional, but each bin gets its own tmp$n folder for the output of each bin.
