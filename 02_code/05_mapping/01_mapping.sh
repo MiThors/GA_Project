@@ -35,19 +35,19 @@ bwa index $i
 bwa mem -t 2 $i \
 $SRCDIR$RNA/RNA_trimmed_D1_1.fastq.gz \
 $SRCDIR$RNA/RNA_trimmed_D1_2.fastq.gz \
-| samtools view -b - | samtools sort -o map_D1_bin$i.bam -
-samtools index map_D1_bin$i.bam
-samtools idxstats map_D1_bin$i.bam > map_D1_bin$i.stats
+| samtools view -b - | samtools sort -o map_D1_bin$n.bam -
+samtools index map_D1_bin$n.bam
+samtools idxstats map_D1_bin$n.bam > map_D1_bin$n.stats
  
 # D2
 bwa mem -t 2 $i \
 $SRCDIR$RNA/RNA_trimmed_D3_1.fastq.gz \
 $SRCDIR$RNA/RNA_trimmed_D3_2.fastq.gz \
-| samtools view -b - | samtools sort -o map_D3_bin$i.bam -
-samtools index map_D3_bin$i.bam
-samtools idxstats map_D3_bin$i.bam > map_D3_bin$i.stats
+| samtools view -b - | samtools sort -o map_D3_bin$n.bam -
+samtools index map_D3_bin$n.bam
+samtools idxstats map_D3_bin$n.bam > map_D3_bin$n.stats
 
 echo "DONE $i and $n"
-done
+cp map*$n* $SRCDIR/01_analyses/05_mapping/tmp
 
-cp map* $SRC/01_analyses/05_mapping/tmp
+done
