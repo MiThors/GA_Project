@@ -1,3 +1,12 @@
+00_data/01_metadata/NCBI_runs_metadata.txt
+00_data/00_raw_data/01_RNA_untrimmed/RNA_D1_2.fastq.gz
+00_data/00_raw_data/01_RNA_untrimmed/RNA_D3_2.fastq.gz
+00_data/00_raw_data/01_RNA_untrimmed/RNA_D1_1.fastq.gz
+00_data/00_raw_data/01_RNA_untrimmed/RNA_D3_1.fastq.gz
+00_data/00_raw_data/00_DNA_trimmed/DNA_trimmed_D1_1.fastq.gz
+00_data/00_raw_data/00_DNA_trimmed/DNA_trimmed_D3_2.fastq.gz
+00_data/00_raw_data/00_DNA_trimmed/DNA_trimmed_D1_2.fastq.gz
+00_data/00_raw_data/00_DNA_trimmed/DNA_trimmed_D3_1.fastq.gz
 00_data/02_trimmed_RNA/
 00_data/03_assembled_DNA/
 01_analyses/00_preprocessing/02_trimming/D1_log.txt.gz
