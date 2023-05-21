@@ -1,1 +1,1 @@
-I actually have no idea what's going to go here, and how to do the metadata.
+Metadata was obtaned from the NCBI website of the original dataset.
